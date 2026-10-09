@@ -1,0 +1,52 @@
+# =============================================================
+#  GlobeTrek Adventures – .gitignore
+# =============================================================
+
+# ----- Environment / Secrets -----
+.env
+.env.local
+.env.*.local
+config/db_local.php
+
+# ----- Database dumps (never commit live data) -----
+*.sql
+*.sqlite
+*.db
+
+# ----- IDE / Editor folders -----
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.sln.docstates
+nbproject/
+
+# ----- OS generated files -----
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# ----- PHP runtime / Cache -----
+*.log
+*.cache
+/tmp/
+/cache/
+
+# ----- Composer (if added in future) -----
+/vendor/
+composer.lock
+
+# ----- Node (if added in future) -----
+node_modules/
+package-lock.json
+
+# ----- Temporary / scratch files -----
+*.bak
+*.swp
+*.orig
